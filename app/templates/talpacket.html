@@ -1,4 +1,14 @@
 {% extends "base.html" %}
+{% block navigation %}
+<ul class="nav navbar-nav">
+    <li><a href="/">Home</a></li>
+    <li><a href="/schedule">Schedule</a></li>
+</ul>
+<ul class="nav navbar-nav navbar-right">
+    <li class="active"><a href="/talpacket">Tal Packet</a></li>
+</ul>
+{% endblock %}
+
 {% block content %}
 <center>
     <div class="jumbotron">
