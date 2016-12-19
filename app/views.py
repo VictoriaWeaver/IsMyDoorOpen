@@ -1,5 +1,6 @@
 from flask import render_template
 from app import app
+import datetime
 
 @app.route('/')
 def home():
@@ -11,4 +12,6 @@ def talpacket():
 
 @app.route('/schedule')
 def schedule():
-    return render_template('schedule.html')  # render a template
+    weekday = datetime.datetime.today().weekday()
+    print ('hello {}'.format(weekday))
+    return render_template('schedule.html', day=weekday)  # render a template
