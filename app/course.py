@@ -1,14 +1,11 @@
 class Course():
-    """
-    Class for the attributes of courses
-    """
     def __init__(self, course_num, class_name, time):
         """
         :param course_num: the course number in SIS
         :param class_name: the name of the course
         :param time: the time span for the class
 
-        Initialize the Course
+            Initialize the Course
         """
 
         # TODO add in an attribute for which days of the week the class occurs
